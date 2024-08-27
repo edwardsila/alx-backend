@@ -20,7 +20,7 @@ client.on('error', (err) => {
 
 function publishMessage(message, time) {
   setTimeout(() => {
-    console.log(`About to send &{message}`);
+    console.log(`About to send ${message}`);
     client.publish('holberton school channel', message);
   }, time);
 }
